@@ -38,12 +38,20 @@ HTML:
 Javascript:
 
 ```javascript
-app.controller('MyController', ['$scope', 'stBlurredDialog', function($scope, stBlurredDialog){
+// Import the module
+var app = angular.module('MyDemo', ['stBlurredDialog']);
 
-    // You can call this from your view
-    $scope.openMyDialog = function(){
-        stBlurredDialog.open(FMIConfig.Dialog.addToCollection, {data: 'This data can be passed to the modal'} );
-    }
-
+// Inject stBlurredDialog
+app.controller('MyCtrl', ['$scope', 'stBlurredDialog', function($scope, stBlurredDialog){
+	$scope.openModal = function(){
+		// Call open() with a template and some data
+		stBlurredDialog.open('dialog_template.html', {msg: 'Hello from the controller!'});
+	}
 }]);
+
+// Create a controller for your modal dialog
+app.controller('DialogCtrl', ['$scope', 'stBlurredDialog', function($scope, stBlurredDialog){
+	$scope.dialogData = stBlurredDialog.getDialogData();
+}]);
+
 ```
