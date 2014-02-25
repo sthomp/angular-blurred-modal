@@ -421,3 +421,40 @@ Small Device Styles
   }
 
 }
+
+button.flat-button{
+  white-space: normal;
+  padding: 10px 19px;
+  font-size: 17px;
+  line-height: 1.471;
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: #3498db;
+  border: none;
+  font-weight: normal;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+  transition: border .25s linear, color .25s linear, background-color .25s linear;
+  display: block;
+  width: 100%;
+  border-color: #46b8da;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  background-image: none;
+}
+
+.my-modal{
+  margin: 100px 50px;
+  color: white;
+  text-align: center
+}
+
+.my-modal h1{
+  color: white;
+}
