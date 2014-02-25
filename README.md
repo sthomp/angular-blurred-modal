@@ -3,6 +3,11 @@ angular-blurred-modal
 
 A fullscreen modal dialog that blurs the background
 
+Example
+-------
+
+http://sthomp.github.io/angular-blurred-modal
+
 Usage
 -----
 
