@@ -51,6 +51,7 @@ app.controller('MyCtrl', ['$scope', 'stBlurredDialog', function($scope, stBlurre
 
 // Create a controller for your modal dialog
 app.controller('DialogCtrl', ['$scope', 'stBlurredDialog', function($scope, stBlurredDialog){
+	// Get the data passed from the controller
 	$scope.dialogData = stBlurredDialog.getDialogData();
 }]);
 
