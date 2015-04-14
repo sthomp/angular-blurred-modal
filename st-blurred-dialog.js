@@ -62,8 +62,7 @@ angular.module("stBlurredDialog",[])
 	// This directive is used to show the modal dialog
 	.directive('stBlurredDialogOverlay', [function(){
 		return {
-			restrict: "E",
-			scope: {},
+			restrict: "E",			
 			replace: true,
 			template: 	"<div ng-if='model.isOpen' class='st-blurred-region-overlay'>" +
 						"<div style='text-align:right;'><button ng-click='close()' class='st-blurred-region-close'>&#10006;</button></div>" +
